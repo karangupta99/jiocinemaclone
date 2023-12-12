@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+ background-color: black;
+}
+#nav{
+    position: relative;
+    padding: 0 10px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+}
+  #text-image{
+   display: flex;
+   align-items: center;
+   gap: 25px;
+   
+}
+#nav  #text-image h4{
+    font-size: 15px;
+    width: fit-content;
+    font-family: rubik;
+    color:gold;
+    font-weight: 700;
+    border: 3px solid gold;
+    padding: 2px 3px;
+    border-radius: 10px;    
+}
+#nav  #text-image h3{
+    font-size: 15px;
+    width: fit-content;
+    font-family: rubik;
+    color:white;
+    font-weight: 700;
+    border: 1px solid white;
+    padding: 10px 6px;
+    border-radius: 15px;    
+}
+#nav  #text-image h2{
+    font-size: 15px;
+    font-family: rubik;
+    color:white;
+    font-weight: 700;
+       
+}
+ #corner {
+    margin-right: -30%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 40px;
+    
+}
+  #corner h1{
+
+    font-size: 20px;
+    font-family: rubik;
+    color:white;
+    opacity: 0.7;
+    font-weight: 700;
+       
+}
+#corner img{
+    height: 25px;
+    width: 25px;
+    padding-left: 7%;
+}
+#photo img{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 30%;
+    left: 95%;
+}
+#side-image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+#side-image #left{
+     padding: 350px 70px;
+     height: 100%;
+     width: 40%;
+    background-color: black;
+}
+#side-image #left h1{
+    font-size: 30PX;
+    font-family: rubik;
+    font-weight: 700;
+    color: white;
+}
+#side-image #left h3{
+    font-size: 20PX;
+    font-family: rubik;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+}
+#side-image #left button{
+    color: white;
+    background-color: rgb(246, 9, 226);
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+#side-image #left button h2{
+    font-size: 25px;
+    font-family: rubik;
+    font-weight: 600;
+}
+#side-image #left button i{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+#side-image #right{
+    position: relative;
+     border: none;
+     height: 100%;
+     width: 60%;
+     background-color: black;
+     background-size: cover;
+     background-position: 80%;
+}
+#right-image{
+    margin: 50px 0px;
+    height: 580px;
+    width: 100%;
+    
+}
+#right-image img{
+    height: 100%;
+    width: 100%;
+    
+    object-position: 80%;
+}
+#side-image #right #icon{
+    position: absolute;
+    top: 83%;
+    left: 70%;
+    display: flex;
+    gap: 30px;
+}
+
+ #side-image #right i{
+     
+    font-size: 30px;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    animation: karan 2s  linear;
+
+}
+i:hover{
+    background-color:rgb(249, 17, 242);
+    
+}
+@keyframes karan {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#second-page{
+    height: 40%;
+    width: 100%;
+}
+#second-page {
+    background-image: url(https://v3img.voot.com/resizeMedium,w_1920,h_411/v3Storage/assets/gg-14x3-1696327223866.jpg);
+    background-position: 70%;
+    background-size: cover;
+
+}
+#text{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+     padding: 10px 20px;
+
+}
+#text h1{
+    font-size: 20px;
+    font-family: rubik;
+    font-weight: 700;
+    color: white;
+}
+#page-3{
+    
+    width: 100%;
+     height: 100%;
+     background-color: black;
+     overflow: hidden;
+     
+}
+#first-sroll{
+    margin: 10px 10px;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: auto;
+}
+#first-sroll::-webkit-scrollbar{
+    display: none;
+}
+
+#first-sroll .box{
+    height: 100%;
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#first-sroll .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+#text1{
+    padding: 5px 20px;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+}
+#text1 h1{
+    font-size: 25px;
+    font-family: rubik;
+    font-weight: 700;
+    color: white;
+}
+#second-scroll{
+    margin: 0px 0px;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    gap: 20px;
+}
+#second-scroll .box{
+    padding: 0px 0;
+    height: 100%;
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+#second-scroll::-webkit-scrollbar{
+    display: none;
+}
+#second-scroll .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#third-page1{
+    
+    height: 70px;
+    width: 100%;
+    background-color: black;
+}
+#third-page{
+    margin: 0px 0;
+    height: 40%;
+    width: 100%;
+}
+ .text{
+   height: 30px;
+   width: 100%;
+ background-color: black;
+ padding: 10px;
+}
+ .text h1{
+    font-size: 20px;
+    font-family: rubik;
+    font-weight: 600;
+    color: white;
+ }
+#third-page {
+    background-image: url(https://v3img.voot.com/resizeMedium,w_1920,h_411/v3Storage/assets/bbk-14x3-1696328001916.jpg?imformat=chrome);
+    background-position: 70%;
+    background-size: cover;
+
+}
+  #fourth-page{
+     height: 100%;
+     width: 100%;
+     background-color: black;
+     padding: 10px 0;
+     overflow: hidden;
+     
+  }
+  #third-sroll{
+     padding: 10px 0;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+#third-sroll::-webkit-scrollbar{
+    display: none;
+}
+
+#third-sroll .box{
+    height: 100%;
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+     padding: px 0;
+    overflow: hidden;
+}
+#third-sroll .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+#text1{
+    padding: 5px 20px;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+}
+#text1 h1{
+    font-size: 25px;
+    font-family: rubik;
+    font-weight: 700;
+    color: white;
+}
+#fourth-scroll{
+    margin: 0px 0px;
+    height: 350px;
+    width: 100%;
+    
+    display: flex;
+    overflow: auto;
+    gap: 20px;
+}
+#fourth-scroll .box{
+    padding: 0px 0;
+    height: 100%;
+    width: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+#fourth-scroll::-webkit-scrollbar{
+    display: none;
+}
+#fourth-scroll .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+#text2{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    padding: 10px 25px;
+}
+#text2 h1{
+    font-size: 20px;
+    font-family: rubik;
+    font-weight: 600;
+    color: white;
+    
+}
+#five-page{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+#third-sroll{
+    padding: 10px 0;
+   height: 350px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   overflow: auto;
+   
+   
+}
+#third-sroll::-webkit-scrollbar{
+   display: none;
+}
+
+#third-sroll .box{
+   height: 100%;
+   width: 250px;
+   flex-shrink: 0;
+   border-radius: 10px;
+    padding: px 0;
+   overflow: hidden;
+}
+#third-sroll .box img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   
+}
+#text1{
+   padding: 5px 20px;
+   height: 40px;
+   width: 100%;
+   background-color: black;
+}
+#text1 h1{
+   font-size: 25px;
+   font-family: rubik;
+   font-weight: 700;
+   color: white;
+}
+#fourth-scroll{
+   margin: 0px 0px;
+   height: 350px;
+   width: 100%;
+   
+   display: flex;
+   overflow: auto;
+   gap: 20px;
+}
+#fourth-scroll .box{
+   padding: 0px 0;
+   height: 100%;
+   width: 250px;
+   flex-shrink: 0;
+   border-radius: 10px;
+   flex-shrink: 0;
+   overflow: hidden;
+}
+
+#fourth-scroll::-webkit-scrollbar{
+   display: none;
+}
+#fourth-scroll .box img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   
+}
+#sixth-page{
+    height: 50%;
+    width: 100%;
+    background-color: black;
+}
+#text1{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    padding: 10px 25px;
+}
+#text1 h1{
+    font-size: 20px;
+    font-family: rubik;
+    font-weight: 600;
+    color: white;
+    
+}
+#third-sroll{
+    padding: 10px 0;
+   height: 350px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   overflow: auto;
+   
+   
+}
+#third-sroll::-webkit-scrollbar{
+   display: none;
+}
+
+   #sixth-page #third-sroll .box{ 
+   height: 70%;
+   width: 350px;
+   flex-shrink: 0;
+   border-radius: 10px;
+    padding: px 0;
+   overflow: hidden;
+}
+#third-sroll .box img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   
+}
+#footer{
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+#one{
+    display: flex;
+    gap: 70px;
+    padding:0px 40px;
+}
+h2{
+    padding: 30px 0px;
+    font-size: 25px;
+    font-family: rubik;
+    font-weight: 700;
+    color: white;
+}
+#two{
+    display: flex;
+    gap: 100px;
+    padding: 50px;
+    
+
+}
+#support  h4{
+    
+    font-size: 17px;
+    font-family: rubik;
+    font-weight: 530px;
+    color: white;
+}
+h3{
+    line-height: 30px;
+    font-size: 17px;
+    font-family: rubik;
+    font-weight: 450;
+    color: white;
+}
+
+#connect h1{
+    padding:40px 0;
+     font-size: 25px;
+     font-family: rubik;
+     font-weight: 700;
+     color: white;
+}
+#connect i{
+    padding: 10px 10px;
+    color: white;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: rgba(137, 43, 226, 0.594);
+
+}
+#download h1{
+    padding: 25px 0;
+    font-size: 40px;
+    font-family: rubik;
+    font-weight: 700;
+    color: white;
+}
